@@ -1,5 +1,5 @@
 * {
-    font-family: 'Quicksand', sans-serif;  
+    font-family: 'Quicksand', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,6 +11,56 @@ strong {
 }
 
 .row-banner {
+    padding: 56px 0px;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+.btn-banner {
+    background-image: linear-gradient(to right, black, red);
+    position: relative;
+    color: #f8f9fa;
+}
+
+.btn-banner:hover {
+    color: #f8f9fa;
+    animation-name: floating;
+    animation-duration: 2s;
+}
+
+@keyframes floating {
+    0% {
+        top: 5px;
+    }
+    25% {
+        top: -5px;
+    }
+    50% {
+        top: 5px
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover:after {
+    visibility: visible;
+    width: 100%;
+}
