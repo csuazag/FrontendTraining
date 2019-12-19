@@ -1,0 +1,74 @@
+body {
+    background-color: #133A4B;
+}
+
+h1 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+h5 {
+    color: white;
+    letter-spacing: 4px;
+}
+
+p {
+    color: #6c757d; 
+}
+
+/* #services {
+    height: 100vh;
+} */
+
+.box{
+    border: 2px solid red;
+    box-sizing: border-box;
+}
+
+.icon-container {
+    width: 40%;
+    padding-bottom: 40%;
+    border: 1px solid green;
+    
+}
+
+#icon-1 {
+    background: url("assets/pencil.png") no-repeat center center;
+    background-size: contain;
+}
+
+#icon-2 {
+    background: url("assets/use.png") no-repeat center center;
+    background-size: contain;
+}
+
+#icon-3 {
+    background: url("assets/social.png") no-repeat center center;
+    background-size: contain;
+}
+
+#icon-4 {
+    background: url("assets/community.png") no-repeat center center;
+    background-size: contain;
+}
+
+#icon-5 {
+    background: url("assets/tagging.png") no-repeat center center;
+    background-size: contain;
+}
+
+#icon-6 {
+    background: url("assets/privacy.png") no-repeat center center;
+    background-size: contain;
+}
+
+#icon-7 {
+    background: url("assets/timeline.png") no-repeat center center;
+    background-size: contain;
+}
+
+#icon-8 {
+    background: url("assets/widget.png") no-repeat center center;
+    background-size: contain;
+}
+
