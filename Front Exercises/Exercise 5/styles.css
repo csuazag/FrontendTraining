@@ -16,19 +16,14 @@ p {
     color: #6c757d; 
 }
 
-/* #services {
-    height: 100vh;
-} */
 
 .box{
-    border: 2px solid red;
     box-sizing: border-box;
 }
 
 .icon-container {
     width: 40%;
     padding-bottom: 40%;
-    border: 1px solid green;
     
 }
 
