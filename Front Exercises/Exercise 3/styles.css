@@ -7,14 +7,6 @@ p {
     font-size: 14px;
 }
 
-hr {
-    width: 30px;
-    margin: 0px;
-    height: 1px;
-    border: none;
-    background: white;
-}
-
 .flex-container {
     box-sizing: border-box;
     display: flex;
@@ -62,7 +54,6 @@ hr {
 }
 
 .cell-equal {
-    box-sizing: border-box;
     width: 50%;
     height: 50%;
     padding: 20px;
@@ -71,6 +62,18 @@ hr {
 .full-size {
     width: 100%;
     height: 100%;
+}
+
+.p-hr {
+    display: inline-block;
+}
+
+.p-hr::after{
+    content: '';
+    display: inline-block;
+    width: 70%;
+    height: 1px;
+    background-color: white;
 }
 
 #cell-1 {
@@ -119,10 +122,12 @@ hr {
 
 .text-container-bottom {
     align-self: flex-end;
+    flex: 1;
 }
 
 .text-container-top {
     align-self: flex-start;
+    flex: 1;
 }
 
 .text-container-center {
@@ -130,24 +135,42 @@ hr {
     flex: 1;
 }
 
-#p-box-white {
-    margin: 0;
-    padding: 20px 0px;
-    color: black;
-    background-color: rgb(235, 231, 231);
-    text-align: center;
-}
 
-#p-box-transp {
-    margin: 0;
-    padding: 20px 0px;
-    background-color: transparent;
-    text-align: center;
-    border: 1px solid rgb(235, 231, 231);
-}
 
 .separator-centred {
     width: 100%;
     justify-content: center;
     align-items: center;
+}
+
+hr {
+    width: 40px;
+    color: white;
+    display: inline-block;
+    margin: 0;
+}
+
+
+.p-box-white {
+    margin: 0;
+    color: black;
+    background-color: rgb(235, 231, 231);
+    text-align: center;
+}
+
+.p-box-transp {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid rgb(235, 231, 231);
+}
+
+.p-inline-block {
+    display: inline-block;
+    padding: 20px 20px;
+}
+
+.p-block {
+    display: block;
+    padding: 20px 60px;
 }
