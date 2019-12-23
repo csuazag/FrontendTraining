@@ -33,7 +33,7 @@ p {
 
 @keyframes floating {
     0% {
-        top: 5px;
+        top: 0px;
     }
     25% {
         top: -5px;
