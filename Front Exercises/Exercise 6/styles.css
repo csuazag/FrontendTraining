@@ -1,0 +1,118 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: #FFF0E9 url("assets/stars-bg.png") center center / cover no-repeat;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+        margin: 40px 20px 20px 20px;
+    }
+    
+    p {
+        color: black;
+    }
+    
+    .tag-h1 {
+        font-size: 50%;
+        vertical-align: text-top;
+    }
+    
+    .primary {
+        text-align: center;
+        color: #70D5CB;
+    }
+    
+    .btn-primary {
+        text-align: center;
+        background-color: #70D5CB;
+    }
+    
+    #card-1 {
+        background-image: linear-gradient(to bottom right, #dcdc65, lightgreen, lightblue);
+    }
+    
+    .card {
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: inline-block;
+    }
+    
+    .card__body {
+        margin: 20px;
+    }
+    
+    .card__body__icon__container {
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card__body__icon {
+        position: relative;
+    }
+    
+    .card__body__icon::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: yellow;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+    }
+    
+    .card__body__icon p {
+        color: white;
+        letter-spacing: 4px;
+        text-align: center;
+        font-size: 0.5rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .card__body__icon span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border-radius: 50%;
+    }
+    
+    .card__body__icon span svg {
+        display: inline-block;
+        width: 60%;
+        height: 60%;
+    }
+    
+    .card__body__description p {
+        text-align: justify;
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    
+    .card__footer {
+        background-color: white;
+        display: inline-block;
+        width: 100%
+    }
+    
+    .card__footer p {
+        text-align: center;
+        color: gray;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    /* Tablets */
+    
+    @media (min-width: 768px) {}
+    /* Desktop */
+    
+    @media (min-width: 992px) {}
