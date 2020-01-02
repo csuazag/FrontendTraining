@@ -11,7 +11,6 @@
 
     p {
         color: #94918F;
-        text-align: justify;
     }
 
     h1 {
@@ -25,12 +24,12 @@
         vertical-align: text-top;
     }
 
-    .container{
+    .container {
         margin-left: 35px;
         margin-right: 35px;
     }
 
-    .container > header {
+    .container>header {
         margin: 50px 0 45px 0;
     }
 
@@ -60,12 +59,11 @@
         display: block;
         width: 100%;
         height: 2px;
-        background-color:#F8C92B;
+        background-color: #F8C92B;
         position: absolute;
         bottom: -3px;
         left: 0;
     }
-
 
     .card__body__icon span {
         display: flex;
@@ -96,7 +94,7 @@
         text-align: justify;
         color: white;
         font-size: 0.8rem;
-        font-weight: 500;        
+        font-weight: 500;
         padding-top: 20px;
         margin: 0px;
     }
@@ -127,27 +125,24 @@
     }
 
     .cards-description {
-        margin: 45px auto;
-        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        width: 100%;
+        text-align: justify;
     }
 
-    .cards-description p {
-        text-align: center;
-    }
 
     .btn-primary {
-        display: block;
-        width: 100px;
-        height: 50px;
+        display: inline-block;
+        padding: 20px 20px;
         text-decoration: none;
         color: white;
-        margin: auto;
-        text-align: center;
         background-color: #70D5CB;
-        line-height: 50px;
         letter-spacing: 3px;
         font-size: 50%;
-
     }
 
     /* Tablets */
@@ -159,30 +154,17 @@
             justify-content: space-between;
             flex-wrap: wrap;
         }
-
-
         .card {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             width: 48%;
         }
-
         .first-header {
             margin: 50px 30px;
         }
 
-        .cards-description {
-            margin-top: 45px;
-            margin-bottom: 45px;
-            width: 100%;
-        }
-
-        .cards-description p {
-            text-align: justify;
-        }
-
-        .container > header {
+        .container>header {
             margin: 50px 35px 45px 35px;
         }
     }
@@ -192,6 +174,12 @@
     @media (min-width: 992px) {
         .card {
             width: 23%;
+        }
+
+        .cards-description {
+            margin: 45px auto;
+            width: 45%;
+            text-align: center;
         }
 
     }
