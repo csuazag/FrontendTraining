@@ -33,10 +33,13 @@
         margin: 50px 0 45px 0;
     }
 
-    .card {
+    .container-card {
         width: 100%;
+        padding: 10px;
+    }
+
+    .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-bottom: 20px;
     }
 
     .card__body {
@@ -134,7 +137,6 @@
         text-align: justify;
     }
 
-
     .btn-primary {
         display: inline-block;
         padding: 20px 20px;
@@ -148,22 +150,22 @@
     /* Tablets */
 
     @media (min-width: 768px) {
-        .container-card-exercises {
+        .container-cards-exercises {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
             flex-wrap: wrap;
+        }
+        .container-card {
+            width: 50%;
         }
         .card {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 48%;
+            height: 100%;
         }
         .first-header {
             margin: 50px 30px;
         }
-
         .container>header {
             margin: 50px 35px 45px 35px;
         }
@@ -172,14 +174,12 @@
     /* Desktop */
 
     @media (min-width: 992px) {
-        .card {
-            width: 23%;
+        .container-card {
+            width: 25%;
         }
-
         .cards-description {
             margin: 45px auto;
             width: 45%;
             text-align: center;
         }
-
     }
